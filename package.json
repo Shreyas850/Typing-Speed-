@@ -1,8 +1,37 @@
 {
+  "name": "typing-speed-test",
+  "version": "1.0.0",
+  "description": "A cross-platform typing speed test app.",
+  "main": "main.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build:web": "vite build", 
+    "build:desktop": "npm run build:web && electron-builder"
+  },
   "dependencies": {
     "@capacitor/android": "^7.2.0",
     "@capacitor/cli": "^7.2.0",
     "@capacitor/core": "^7.2.0",
-    "@vercel/analytics": "^1.5.0"
+    "@vercel/analytics": "^1.5.0",
+    "electron": "^29.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.yourname.typingspeed",
+    "productName": "Typing Speed Test",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   }
 }
