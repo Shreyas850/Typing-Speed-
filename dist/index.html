@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <script type="module" crossorigin src="/assets/index-DZE0-pLw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BZWPcP1p.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="top-bar">
+      <button id="themeToggle">🌍 Theme</button>
+      <select id="languageSelector">
+        <option value="en" selected>English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+      </select>
+    </div>
+
+    <div class="stats">
+      <p>Tests Taken: <span id="tests">0</span> | Best WPM: <span id="bestWpm">0</span></p>
+    </div>
+
+    <div class="quote-box" id="quoteBox">
+      <p id="quoteText">Loading quote...</p>
+    </div>
+
+    <div class="typing-area">
+      <textarea
+        id="typingInput"
+        placeholder="Start typing here..."
+        disabled
+        autocorrect="off"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+      ></textarea>
+    </div>
+
+    <button id="startBtn">Start Test</button>
+    <p id="timer">⏳ 30s</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
