@@ -7,7 +7,7 @@
     "start": "electron .",
     "dev": "vite",
     "build:web": "vite build",
-    "build:electron": "electron-builder"
+    "build:desktop": "electron-builder"
   },
   "dependencies": {
     "@capacitor/android": "^7.2.0",
@@ -21,11 +21,6 @@
     "electron-builder": "^26.0.12",
     "vite": "^5.0.0"
   },
-  "scripts": {
-  "start": "electron .",
-  "build:web": "vite build",
-  "build:desktop": "electron-builder"
-}
   "build": {
     "appId": "com.typing.speedtest",
     "productName": "Typing Speed Test",
