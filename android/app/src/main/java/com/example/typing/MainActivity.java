@@ -1,4 +1,4 @@
-package com.example.typingspeed;
+package com.example.typing;
 
 import com.getcapacitor.BridgeActivity;
 

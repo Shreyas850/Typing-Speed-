@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Typing Speed</string>
-    <string name="title_activity_main">Typing Speed</string>
-    <string name="package_name">com.example.typingspeed</string>
-    <string name="custom_url_scheme">com.example.typingspeed</string>
+    <string name="app_name">Typing Speed Test</string>
+    <string name="title_activity_main">Typing Speed Test</string>
+    <string name="package_name">com.example.typing</string>
+    <string name="custom_url_scheme">com.example.typing</string>
 </resources>
