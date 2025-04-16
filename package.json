@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build:web": "vite build", 
+    "build:web": "vite build",
     "build:desktop": "npm run build:web && electron-builder"
   },
   "dependencies": {
@@ -15,7 +15,8 @@
     "@capacitor/cli": "^7.2.0",
     "@capacitor/core": "^7.2.0",
     "@vercel/analytics": "^1.5.0",
-    "electron": "^29.0.0"
+    "electron": "^29.0.0",
+    "typing-speed-test": "file:"
   },
   "devDependencies": {
     "electron-builder": "^26.0.12"
