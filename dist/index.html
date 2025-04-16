@@ -5,50 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Typing Speed Test</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Typing Speed Test</h1>
-    <div>
-      <button id="themeToggle">🌗 Theme</button>
-      <select id="langSelect">
-        <option value="en">English</option>
+
+    <div class="top-bar">
+      <button id="themeToggle">🌍 Theme</button>
+      <select id="languageSelector">
+        <option value="en" selected>English</option>
         <option value="hi">Hindi</option>
         <option value="es">Spanish</option>
       </select>
     </div>
-  </header>
 
-  <div id="stats">
-    <span>Tests Taken: <strong id="tests">0</strong></span> |
-    <span>Best WPM: <strong id="bestWpm">0</strong></span>
+    <div class="stats">
+      <p>Tests Taken: <span id="tests">0</span> | Best WPM: <span id="bestWpm">0</span></p>
+    </div>
+
+    <div class="quote-box" id="quoteBox">
+      <p id="quoteText">Loading quote...</p>
+    </div>
+
+    <div class="typing-area">
+      <textarea
+        id="typingInput"
+        placeholder="Start typing here..."
+        disabled
+        autocorrect="off"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+      ></textarea>
+    </div>
+
+    <button id="startBtn">Start Test</button>
+    <p id="timer">⏳ 30s</p>
   </div>
-
-  <div class="typing-area">
-    <textarea
-      id="typingInput"
-      placeholder="Start typing here..."
-      disabled
-      autocorrect="off"
-      autocomplete="off"
-      autocapitalize="off"
-      spellcheck="false"
-    ></textarea>
-  </div>
-
-  <div id="quote"><span class="cursor">|</span></div>
-  <textarea id="input" placeholder="Start typing here..." disabled></textarea>
-  <button id="startBtn">Start Test</button>
-  <div id="timer">⏳ 30s</div>
-  <div id="result"></div>
-  <button id="shareBtn" style="display: none;">📋 Copy Result</button>
-
-  <audio id="typeSound" src="sounds/type.wav" preload="auto"></audio>
-  <audio id="finishSound" src="sounds/finish.wav" preload="auto"></audio>
 
   <script src="script.js"></script>
-  <script src="script.js" defer></script>
 </body>
 </html>
