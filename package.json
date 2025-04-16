@@ -21,6 +21,11 @@
     "electron-builder": "^26.0.12",
     "vite": "^5.0.0"
   },
+  "scripts": {
+  "start": "electron .",
+  "build:web": "vite build",
+  "build:desktop": "electron-builder"
+}
   "build": {
     "appId": "com.typing.speedtest",
     "productName": "Typing Speed Test",
