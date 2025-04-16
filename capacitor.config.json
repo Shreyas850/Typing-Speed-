@@ -1,5 +1,6 @@
 {
-  "appId": "com.typing.speed",
-  "appName": "typing-speed-app",
-  "webDir": "Typing"
+  "appId": "com.example.typingspeed",
+  "appName": "Typing Speed",
+  "webDir": "dist",
+  "bundledWebRuntime": false
 }
